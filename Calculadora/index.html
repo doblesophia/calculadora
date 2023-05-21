@@ -13,45 +13,48 @@
     <h3>¡Haz tus cálculos de manera mucho más sencilla!</h3>
 </head>
 <body>
-    <div class="d-flex justify-content-center align-items-center">
-        <div class="rectangle bg-primary"></div>
+    
+    <div class="d-flex align-items-center justify-content-center">
 
-
+        <div class="rectangle bg-primary">
+            <h1 id ="resultado" >0</h1>
         </div>
+
     </div>
+
     <div class="d-flex justify-content-center botones-calculadora">
        
-        <button type="button" class="btn btn-outline-dark primero">9</button>
-        <button type="button" class="btn btn-outline-dark primero ">8</button>
-        <button type="button" class="btn btn-outline-dark primero">7</button>
-        <button type="button" class="btn btn-outline-dark primero ">ac</button>
-        <button type="button" class="btn btn-outline-dark primero">ac</button>
+        <button type="button" id="nueve" class="btn btn-outline-dark primero">9</button>
+        <button type="button" id="ocho" class="btn btn-outline-dark primero ">8</button>
+        <button type="button" id="siete" class="btn btn-outline-dark primero">7</button>
+        <button type="button" id="acUno" class="btn btn-outline-info primero ">ac</button>
+        <button type="button" id="acDos" class="btn btn-outline-info primero">ac</button>
     
     </div>
 
     <div class="d-flex justify-content-center botones-calculadora">
        
-        <button type="button" class="btn btn-outline-dark primero">4</button>
-        <button type="button" class="btn btn-outline-dark primero ">5</button>
-        <button type="button" class="btn btn-outline-dark primero">6</button>
-        <button type="button" class="btn btn-outline-dark primero ">x</button>
-        <button type="button" class="btn btn-outline-dark primero">%</button>
+        <button type="button" id="cuatro"class="btn btn-outline-dark primero">4</button>
+        <button type="button" id="cinco" class="btn btn-outline-dark primero ">5</button>
+        <button type="button" id="seis" class="btn btn-outline-dark primero">6</button>
+        <button type="button" id="por"class="btn btn-outline-info primero ">x</button>
+        <button type="button" id="dividido"class="btn btn-outline-info primero">%</button>
     
     </div>
     <div class="d-flex justify-content-center botones-calculadora">
        
-        <button type="button" class="btn btn-outline-dark primero">1</button>
-        <button type="button" class="btn btn-outline-dark primero ">2</button>
-        <button type="button" class="btn btn-outline-dark primero">3</button>
-        <button type="button" class="btn btn-outline-dark primero ">+</button>
-        <button type="button" class="btn btn-outline-dark primero">-</button>
+        <button type="button" id="uno"class="btn btn-outline-dark primero">1</button>
+        <button type="button" id="dos"class="btn btn-outline-dark primero ">2</button>
+        <button type="button" id="tres"class="btn btn-outline-dark primero">3</button>
+        <button type="button" id="mas"class="btn btn-outline-info primero ">+</button>
+        <button type="button" id="menos"class="btn btn-outline-info primero">-</button>
     
     </div>
     <div class="d-flex justify-content-center botones-calculadora">
        
-        <button type="button" class="btn btn-outline-dark primero">0</button>
-        <button type="button" class="btn btn-outline-dark primero ">.</button>
-        <button type="button" class="btn btn-outline-dark primero ">=</button>
+        <button type="button" id="cero"class="btn btn-outline-dark primero">0</button>
+        <button type="button" id="punto"class="btn btn-outline-info primero ">.</button>
+        <button type="button" id="igual"class="btn btn-outline-info primero ">=</button>
     
     </div>
 
@@ -60,4 +63,5 @@
 <footer>
 
 </footer>
+<script src="calculadora.js"></script>
 </html>
