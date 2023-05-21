@@ -13,50 +13,51 @@
     <h3>¡Haz tus cálculos de manera mucho más sencilla!</h3>
 </head>
 <body>
-    
+<div class="calculator">
     <div class="d-flex align-items-center justify-content-center">
 
-        <div class="rectangle bg-primary">
-            <h1 id ="resultado" >0</h1>
+        <div class="rectangle bg-primary" id="display">
+            
         </div>
 
     </div>
 
     <div class="d-flex justify-content-center botones-calculadora">
        
-        <button type="button" id="nueve" class="btn btn-outline-dark primero">9</button>
-        <button type="button" id="ocho" class="btn btn-outline-dark primero ">8</button>
-        <button type="button" id="siete" class="btn btn-outline-dark primero">7</button>
-        <button type="button" id="acUno" class="btn btn-outline-info primero ">ac</button>
-        <button type="button" id="acDos" class="btn btn-outline-info primero">ac</button>
+        <button type="button"  class="btn btn-outline-dark primero " data-value="7">7</button>
+        <button type="button"  class="btn btn-outline-dark primero " data-value="8">8</button>
+        <button type="button"  class="btn btn-outline-dark primero" data-value="9">9</button>
+        <button type="button"  class="btn btn-outline-info primero" data-value="ac" >ac</button>
+        <button type="button"  class="btn btn-outline-info primero" data-value="ac">ac</button>
     
     </div>
 
     <div class="d-flex justify-content-center botones-calculadora">
        
-        <button type="button" id="cuatro"class="btn btn-outline-dark primero">4</button>
-        <button type="button" id="cinco" class="btn btn-outline-dark primero ">5</button>
-        <button type="button" id="seis" class="btn btn-outline-dark primero">6</button>
-        <button type="button" id="por"class="btn btn-outline-info primero ">x</button>
-        <button type="button" id="dividido"class="btn btn-outline-info primero">%</button>
+        <button type="button" class="btn btn-outline-dark primero" data-value="4">4</button>
+        <button type="button"  class="btn btn-outline-dark primero " data-value="5">5</button>
+        <button type="button"  class="btn btn-outline-dark primero" data-value="6">6</button>
+        <button type="button" class="btn btn-outline-info primero " data-value="*">*</button>
+        <button type="button" class="btn btn-outline-info primero" data-value="/">/</button>
     
     </div>
     <div class="d-flex justify-content-center botones-calculadora">
        
-        <button type="button" id="uno"class="btn btn-outline-dark primero">1</button>
-        <button type="button" id="dos"class="btn btn-outline-dark primero ">2</button>
-        <button type="button" id="tres"class="btn btn-outline-dark primero">3</button>
-        <button type="button" id="mas"class="btn btn-outline-info primero ">+</button>
-        <button type="button" id="menos"class="btn btn-outline-info primero">-</button>
+        <button type="button" class="btn btn-outline-dark primero" data-value="1">1</button>
+        <button type="button" class="btn btn-outline-dark primero " data-value="2">2</button>
+        <button type="button" class="btn btn-outline-dark primero" data-value="3">3</button>
+        <button type="button" class="btn btn-outline-info primero " data-value="+">+</button>
+        <button type="button" class="btn btn-outline-info primero" data-value="-">-</button>
     
     </div>
     <div class="d-flex justify-content-center botones-calculadora">
        
-        <button type="button" id="cero"class="btn btn-outline-dark primero">0</button>
-        <button type="button" id="punto"class="btn btn-outline-info primero ">.</button>
-        <button type="button" id="igual"class="btn btn-outline-info primero ">=</button>
+        <button type="button" class="btn btn-outline-dark primero" data-value="0">0</button>
+        <button type="button" class="btn btn-outline-info primero " data-value=".">.</button>
+        <button type="button" class="btn btn-outline-info primero " data-value="=">=</button>
     
     </div>
+</div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
