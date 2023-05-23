@@ -9,7 +9,7 @@ buttons.forEach(button => {
     const value = button.getAttribute('data-value');
 
     // Realizar la acción correspondiente al valor del botón
-    if (value === 'C') {
+    if (value === 'ac') {
       display.textContent = '';
     } else if (value === '=') {
       try {
@@ -59,16 +59,15 @@ const evaluateExpression = (expression) => {
 
 // Función para realizar el cálculo entre dos números y un operador
 const calculateResult = (num1, num2, operator) => {
-  switch (operator) {
-    case '+':
-      return num1 + num2;
-    case '-':
-      return num1 - num2;
-    case '*':
-      return num1 * num2;
-    case '/':
-      return num1 / num2;
-    default:
-      throw new Error('Operador no válido');
+  if (operator === '+') {
+    return num1 + num2;
+  } else if (operator === '-') {
+    return num1 - num2;
+  } else if (operator === '*') {
+    return num1 * num2;
+  } else if (operator === '/') {
+    return num1 / num2;
+  } else {
+    throw new Error('Operador no válido');
   }
 }
