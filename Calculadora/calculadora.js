@@ -25,7 +25,7 @@ buttons.forEach(button => {
 });
 
 // Función para evaluar la expresión matemática ingresada
-function evaluateExpression(expression) {
+const evaluateExpression = (expression) => {
   const operators = ['+', '-', '*', '/'];
   let currentOperator = null;
   let currentNumber = '';
@@ -58,7 +58,7 @@ function evaluateExpression(expression) {
 }
 
 // Función para realizar el cálculo entre dos números y un operador
-function calculateResult(num1, num2, operator) {
+const calculateResult = (num1, num2, operator) => {
   switch (operator) {
     case '+':
       return num1 + num2;
